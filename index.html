@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Casamento</title>
+    <link rel="stylesheet" href="estilos.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.ibb.co/7Sr9GZM/Bubbly-Bride-Embrace-The-Unavoidable-On-Your-Wedding-Day.jpg" 
+        alt="Anel de Noivado" class="fotoCOnteiner">
+        <h1>Pedido de Casamento</h1>
+        <p>Olá meu amor,</p>
+        <p>Hoje é um dia muito especial. Quero compartilhar minha vida inteira com você e não posso imaginar meu futuro sem você ao meu lado.</p>
+        <p>Então, o que você acha de tornar oficial? Aceita se casar comigo?</p>
+        <button id="yesBtn">Sim!</button>
+        <button id="noBtn">Não.</button>
+    </div>
+
+    <script>
+    document.getElementById('yesBtn').addEventListener('click', function() {
+        document.body.style.backgroundImage = "url('https://i.ibb.co/Wg3wg0r/d7f7d7b7-a5ea-41cd-80d0-65608be7e0db.jpg')";
+        alert('Você disse SIM! Não acreditooooo!!! Eu te amo mais do que tudo nesse mundoo!!!.');
+        var container = document.querySelector('.container');
+        container.style.background = 'transparent';
+        container.innerHTML = '<img src="https://i.gifer.com/54vL.gif" alt="Pedido de Casamento">';
+    });
+
+    document.getElementById('noBtn').addEventListener('click', function() {
+        alert('Oh, não! Por favor, pense com carinho.');
+    });
+    </script>
+</body>
+</html>
